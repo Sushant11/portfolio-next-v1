@@ -1,20 +1,38 @@
-import React from 'react';
+import React, { useState, Fragment } from 'react';
 
+import { Menu } from 'antd';
+import { DesktopOutlined, BranchesOutlined, FileTextOutlined, MailOutlined } from '@ant-design/icons';
+
+import logo from '../public/HeaderLogo.svg'
+import logodark from '../public/logodark.png'
 
 const nav = () => {
-    return (
-        <header>
-            <div>
-                <img src='/headerLogo.svg' alt='Sushant Chitrakar' />
-            </div>
+    const [current, setCurrent] = useState('')
 
-            <div class="topnav">
-                <a href="#works">Works</a>
-                <a href="#experience">Experience</a>
-                <a href="#contact">Contact</a>
-                <a href="#resume">Resume</a>
+    const handelClick = (e) => {
+        setCurrent(e.key)
+    }
+
+    return (
+        <Fragment>
+            <div className='logo'>
+                <img src={logo} alt='Sushant Chitrakar' />
             </div>
-        </header>
+            <ul>
+                <li>
+                    <a href='#'>Works</a>
+                </li>
+                <li>
+                    <a href='#'>Experience</a>
+                </li>
+                <li>
+                    <a href='#'>Say Hi!</a>
+                </li>
+                <li>
+                    <a type='button' href='#'>Resume</a>
+                </li>
+            </ul>
+        </Fragment>
     );
 };
 

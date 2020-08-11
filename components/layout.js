@@ -1,6 +1,6 @@
 import React from 'react';
 
-const layout = ({children}) => {
+const NextLayout = ({children}) => {
     return (
         <div>
             {children}
@@ -8,4 +8,4 @@ const layout = ({children}) => {
     );
 };
 
-export default layout;
+export default NextLayout;
