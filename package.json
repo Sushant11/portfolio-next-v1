@@ -5,14 +5,14 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "build-css": "tailwindcss build styles/global.css -o public/styles.css"
   },
   "dependencies": {
-    "antd": "^4.5.1",
     "next": "9.4.4",
     "next-images": "^1.4.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "sass": "^1.26.10"
+    "tailwindcss": "^1.7.2"
   }
 }

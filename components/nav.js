@@ -20,13 +20,13 @@ const nav = () => {
             </div>
             <ul>
                 <li>
-                    <a href='#'>Works</a>
+                    <a type='button' href='#'>Works</a>
                 </li>
                 <li>
-                    <a href='#'>Experience</a>
+                    <a type='button' href='#'>Experience</a>
                 </li>
                 <li>
-                    <a href='#'>Say Hi!</a>
+                    <a type='button' href='#'>Say Hi!</a>
                 </li>
                 <li>
                     <a type='button' href='#'>Resume</a>
