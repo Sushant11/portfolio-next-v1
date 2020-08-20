@@ -1,22 +1,25 @@
 import React from 'react'
 import dynamic from 'next/dynamic'
-
+import Link from 'next/link'
 import NextLayout from '../../components/layout'
-
 const DynamicHead = dynamic(() => import('../../components/head'))
+
+import notFound from '../../public/assets/MessyDoodle.svg'
 
 
 const index = () => {
     return (
         <NextLayout>
             <DynamicHead />
-            <div className="max-w-sm mx-auto flex p-6 bg-white rounded-lg shadow-xl font-body">
-                <div class="flex-shrink-0">
-                    <img class="h-12 w-12" src="/img/logo.svg" alt="ChitChat Logo"/>
-                </div>
-                <div class="ml-6 pt-1">
-                    <h4 class="text-xl text-gray-900 leading-tight">ChitChat</h4>
-                    <p class="text-base text-gray-600 leading-normal">You have a new message!</p>
+            <div className='h-screen flex justify-center items-center flex-col'>
+                <img src={notFound} alt="Not Found" className='w-1/4' />
+                <div className="w-1/3 h-auto mx-auto flex p-6 items-center bg-bgDark rounded-lg shadow-md font-body mt-16 text-white hover:shadow-xl justify-between">
+                    <span>Sorry! The page you are looking for is unavailabe.😥</span>
+                    <Link href='/'>
+                        <button class="transition duration-500 ease-in-out font-semibold bg-white text-bgDark py-2 px-4 border border-white rounded transform hover:scale-105">
+                            Home
+                        </button>
+                    </Link>
                 </div>
             </div>
         </NextLayout>

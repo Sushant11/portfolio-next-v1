@@ -7,7 +7,10 @@ module.exports = {
     },
     extend: {
       colors: {
-        cyan: '#9cdbff',
+        bgWhite: '#F9F9F9',
+        softGrey: '#F1F3F5',
+        bgDark: '#252525',
+        darkGrey: '#363636',
       },
       margin: {
         '96': '24rem',

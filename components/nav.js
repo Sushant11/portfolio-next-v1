@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from 'react';
 
-import logo from '../public/HeaderLogo.svg'
-import logodark from '../public/logodark.png'
+import logo from '../public/assets/HeaderLogo.svg'
+import logodark from '../public/assets/logodark.png'
 
 const nav = () => {
     const [current, setCurrent] = useState('')
