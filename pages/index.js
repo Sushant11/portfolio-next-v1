@@ -2,10 +2,6 @@ import React from 'react'
 import NextLayout from '../components/layout'
 import dynamic from 'next/dynamic'
 
-import { Layout } from 'antd';
-
-const { Header, Content, Footer } = Layout;
-
 const DynamicHead = dynamic(() => import('../components/head'))
 const DynamiNav = dynamic(() => import('../components/nav'))
 const DynamiBody = dynamic(() => import('../components/main'))
@@ -16,17 +12,17 @@ const Home = () => {
   return (
     <NextLayout>
       <DynamicHead />
-      <Header className='site-header'>
+      <div className='site-header'>
         <DynamiNav />
-      </Header>
+      </div>
 
-      <Content className='site-body'>
+      <div className='site-body'>
         <DynamiBody/>
-      </Content>
+      </div>
 
-      <Footer className='site-footer'>
+      <div className='site-footer'>
         <DynamiFooter />
-      </Footer>
+      </div>
     </NextLayout>
   );
 };
