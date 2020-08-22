@@ -16,9 +16,9 @@ const Home = () => {
         <DynamiNav />
       </div>
 
-      {/* <div className='site-body'>
-        <DynamiBody/>
-      </div> */}
+      <div className='site-body'>
+        <DynamiBody />
+      </div>
 
       {/* <div className='site-footer'>
         <DynamiFooter />
