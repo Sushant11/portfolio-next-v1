@@ -618,6 +618,10 @@ video {
   --transform-scale-y: .95;
 }
 
+.tap-highlight{
+  -webkit-tap-highlight-color: transparent;
+}
+
 .space-y-0 > :not(template) ~ :not(template) {
   --space-y-reverse: 0 !important;
   margin-top: calc(0px * calc(1 - var(--space-y-reverse))) !important;
@@ -22869,6 +22873,26 @@ video {
     transform: none;
     -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
             animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+@-webkit-keyframes slide {
+  0%, 100% {
+    transform: slide;
+  }
+
+  50% {
+    transform: slide;
+  }
+}
+
+@keyframes slide {
+  0%, 100% {
+    transform: slide;
+  }
+
+  50% {
+    transform: slide;
   }
 }
 

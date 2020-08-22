@@ -16,4 +16,8 @@
     @apply scale-95;
 }
 
+.tap-highlight{
+    -webkit-tap-highlight-color: transparent;
+}
+
 @tailwind utilities;
