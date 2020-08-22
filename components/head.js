@@ -5,11 +5,12 @@ const head = () => {
     return (
         <Head>
             <title>Sushant Chitrakar</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-                <link rel="icon" href="/favicon.png" type="image/png" sizes="48x48"></link>
-                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"></link>
-                <script src="https://kit.fontawesome.com/525dea9744.js" crossorigin="anonymous"></script>
-                <script type='text/script' src='/static/js/script.js'></script>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link rel="icon" href="/favicon.png" type="image/png" sizes="48x48"></link>
+            <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+            />                <script type='text/script' src='/static/js/script.js'></script>
         </Head>
     );
 };

@@ -2,4 +2,18 @@
 
 @tailwind components;
 
+.nav-icons{
+    @apply w-6 ;
+    @apply h-6 ;
+    @apply inline ;
+    @apply transition ;
+    @apply duration-300 ;
+    @apply ease-in-out ;
+    @apply transform ;
+}
+
+.nav-icons:hover{
+    @apply scale-95;
+}
+
 @tailwind utilities;

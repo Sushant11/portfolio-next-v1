@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "build-css": "tailwindcss build styles/global.css -o public/styles.css"
+    "build-css": "tailwindcss build styles/global.css -o public/styles.css",
+    "watch-css": "tailwindcss build styles/global.css -o public/styles.css --watch"
   },
   "dependencies": {
     "next": "9.4.4",

@@ -3,7 +3,7 @@ import NextLayout from '../components/layout'
 import dynamic from 'next/dynamic'
 
 const DynamicHead = dynamic(() => import('../components/head'))
-const DynamiNav = dynamic(() => import('../components/nav'))
+const DynamiNav = dynamic(() => import('../components/navigation'))
 const DynamiBody = dynamic(() => import('../components/main'))
 const DynamiFooter = dynamic(() => import('../components/footer'))
 
@@ -16,13 +16,13 @@ const Home = () => {
         <DynamiNav />
       </div>
 
-      <div className='site-body'>
+      {/* <div className='site-body'>
         <DynamiBody/>
-      </div>
+      </div> */}
 
-      <div className='site-footer'>
+      {/* <div className='site-footer'>
         <DynamiFooter />
-      </div>
+      </div> */}
     </NextLayout>
   );
 };

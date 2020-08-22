@@ -5,9 +5,6 @@ import NextLayout from '../../components/layout'
 const DynamicHead = dynamic(() => import('../../components/head'))
 
 import notFound from '../../public/assets/MessyDoodle.svg'
-import homeIcon from '../../public/assets/icons/home-2.svg'
-
-
 
 const index = () => {
     return (
@@ -15,14 +12,12 @@ const index = () => {
             <DynamicHead />
             <div className='h-screen flex justify-center items-center flex-col'>
                 <img src={notFound} alt="Not Found" className='w-1/4 xl:w-1/2 sm:w-3/4'/>
-                <div className="w-1/2 xl:w-3/4 h-auto mx-auto flex p-6 items-center bg-bgDark rounded-lg shadow-md font-body mt-16 text-white hover:shadow-xl justify-between flex-wrap">
-                    <span>Sorry! The page you are looking for is unavailabe.😥</span>
-                    <Link href='/'>
-                        <button class="sm:mt-3 transition duration-500 ease-in-out font-semibold bg-white text-bgDark py-1 px-2 border border-white rounded transform hover:scale-105">
-                            <img src={homeIcon} alt="Home"/>
+                <div className='mx-auto font-semibold text-3xl mt-4'>Page Not Found.</div>
+                <Link href='/'>
+                        <button class="mt-2 transition duration-500 ease-in-out py-1 px-2 rounded transform hover:scale-110 focus:outline-none">
+                        <svg viewBox="0 0 20 20" fill="currentColor" className="arrow-circle-left w-8 h-8"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clipRule="evenodd" /></svg>
                         </button>
                     </Link>
-                </div>
             </div>
         </NextLayout>
     );

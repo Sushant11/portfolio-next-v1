@@ -1,17 +1,20 @@
 module.exports = {
   important: true,
   theme: {
+    container: {
+      center: true,
+    },
     screens: {
-      'xl': {'max': '1279px'},
+      'xl': { 'max': '1279px' },
       // => @media (max-width: 1279px) { ... }
 
-      'lg': {'max': '1023px'},
+      'lg': { 'max': '1023px' },
       // => @media (max-width: 1023px) { ... }
 
-      'md': {'max': '767px'},
+      'md': { 'max': '767px' },
       // => @media (max-width: 767px) { ... }
 
-      'sm': {'max': '639px'},
+      'sm': { 'max': '639px' },
       // => @media (max-width: 639px) { ... }
     },
     fontFamily: {
@@ -29,9 +32,15 @@ module.exports = {
         '96': '24rem',
         '128': '32rem',
       },
+      keyframes: {
+        slide: {
+          '0%, 100%': { transform: 'slide' },
+          '50%': { transform: 'slide' },
+        }
+      }
     }
   },
   variants: {
-    opacity: ['responsive', 'hover']
+    opacity: ['responsive', 'hover', 'focus', 'active']
   }
 }
