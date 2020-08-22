@@ -7,16 +7,16 @@ import Nav from './sub-components/Nav';
 // import logodark from '../public/assets/logodark.png'
 
 const nav = () => {
-    const [isOpen, setopen] = useState(false)
+    const [isOpen, setOpen] = useState(false)
 
     const handelNav = () => {
-        setopen(!isOpen)
+        setOpen(!isOpen)
     }
 
     return (
         <Fragment>
             {isOpen &&
-                <Sidenav isOpen={isOpen} />
+                <Sidenav isOpen={isOpen} setOpen={setOpen} />
             }
             <div className='flex justify-between items-center pt-8'>
                 <div >
