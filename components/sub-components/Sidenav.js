@@ -2,7 +2,7 @@ import React from 'react';
 
 const Sidenav = ({ isOpen, setOpen }) => {
     return (
-        <div className={`hidden items-center md:block pl-6 font-normal text-gray-800 absolute h-full bg-white right-0 shadow-xl pt-24 transition duration-500 ease-in w-1/2`}>
+        <div className={`hidden items-center md:block pl-6 font-normal z-20 text-gray-800 absolute h-full bg-white right-0 shadow-xl pt-24 transition duration-500 ease-in w-1/2`}>
             <div className='flex flex-col'>
                 <div className='hover:text-gray-600 my-4'>
                     <a type='button' href='#' onClick={() => setOpen(!isOpen)} className='inline-flex items-center'>

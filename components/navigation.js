@@ -24,9 +24,9 @@ const nav = () => {
                     <img src={logoSC} alt='Sushant Chitrakar' className='sm:ml-4 w-8 hidden sm:block' />
                 </div>
                 <Nav />
-                <div className='hidden md:block'>
+                <div className='hidden md:block z-20'>
                     <a type='button' onClick={handelNav} className='cursor-pointer'>
-                        {isOpen ? <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="x-circle sm:mr-4 nav-icons"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> :
+                        {isOpen ? <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="x-circle sm:mr-4 nav-icons "><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> :
                             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="menu sm:mr-4 nav-icons"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
 
                         }
