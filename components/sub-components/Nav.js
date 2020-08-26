@@ -3,7 +3,7 @@ import React from 'react';
 import { Tooltip } from 'react-tippy'
 
 const tootipProps = {
-    position: "bottom",
+    position: "top",
     trigger: "mouseenter",
     arrow: 'true',
     arrowSize: 'small',
