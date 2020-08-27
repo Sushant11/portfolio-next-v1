@@ -10,7 +10,8 @@ const head = () => {
             <link
                 rel="stylesheet"
                 href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-            />                <script type='text/script' src='/static/js/script.js'></script>
+            />
+            <script type='text/script' src='/static/js/script.js'></script>
         </Head>
     );
 };
