@@ -74,7 +74,7 @@ export default [
     }, {
         'date': '2020-05-14',
         'title': 'Social Dashboard',
-        'desc': 'Frontend Mentor challenge to social media dashboard with theme switcher.',
+        'desc': 'Frontend Mentor challenge to create social media dashboard with theme switcher.',
         // cover: './halcyon.png',
         'github': 'https://github.com/Sushant11/Social-Media-Dashboard',
         'external': 'https://fm-socialdashboard.netlify.app/',
