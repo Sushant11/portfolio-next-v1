@@ -7,7 +7,7 @@ const main = () => {
     return (
         <Fragment>
             <Intro />
-            {/* <Works /> */}
+            <Works />
         </Fragment>
     );
 };

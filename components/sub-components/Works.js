@@ -3,15 +3,21 @@ import React from 'react';
 import line from '../../public/assets/line.svg'
 import Card from './items/Card';
 
+import projects from '../../assets/content/projects/index'
+
+
 const Works = () => {
     return (
-        <section id='works' className='h-screen flex justify-center items-center flex-col'>
-            <div className=' text-bgDark text-opacity-75 font-medium flex items-center float-left w-full mb-16 -mt-64'>
-            Some things I've Built <img src={line} alt="Line" className='ml-16'/>
+        <section id='works' className='md:h-auto h-screen flex justify-center items-center flex-col'>
+            <div className=' text-bgDark text-opacity-75 font-medium flex float-left w-full mb-16 md:mt-32 -mt-20 ml-8 cursor-default'>
+                Some things I've built <img src={line} alt="Line" className='ml-16 md:hidden' />
             </div>
-
-            <div>
-                <Card/>
+            <div className='flex justify-between flex-wrap w-full md:justify-center'>
+                {
+                    projects.map(item => (
+                        <Card item={item} />
+                    ))
+                }
             </div>
         </section>
     );
