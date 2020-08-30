@@ -6,9 +6,9 @@ import dots from '../../public/assets/dots.svg'
 
 const Intro = () => {
     return (
-        <section id='intro'>
-            <div className='flex flex-wrap md:flex-col justify-between items-center md:items-center md:h-auto' style={{ height: '90vh' }}>
-                <div className='relative md:mt-48'>
+        <section id='intro' style={{ height: '90vh' }} >
+            <div className='flex flex-wrap md:flex-col justify-between items-center md:items-center md:h-auto'  style={{ height: '90vh' }}>
+                <div className='relative md:mt-40 sm:mt-32 sm:my-12'>
                     <img src={logo} alt='Sushant Chitrakar' className='rounded-md z-10 shadow-xl md:w-1/2 lg:w-3/4 mx-auto hover:shadow transition ease-in-out duration-300' />
                     <img src={dots} alt='Sushant Chitrakar' className='absolute w-40 -mt-24 right-0 -mr-20 opacity-50 md:hidden lg:w-1/3 lg:-mr-2 lg:-mt-24' style={{ zIndex: '-1' }} />
                 </div>
