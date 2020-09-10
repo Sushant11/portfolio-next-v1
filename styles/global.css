@@ -24,4 +24,14 @@ body{
     -webkit-tap-highlight-color: transparent;
 }
 
+.footer-icons{
+    @apply w-4 ;
+    @apply h-4 ;
+    @apply inline ;
+    @apply transition ;
+    @apply duration-300 ;
+    @apply ease-in-out ;
+    @apply transform ;
+}
+
 @tailwind utilities;

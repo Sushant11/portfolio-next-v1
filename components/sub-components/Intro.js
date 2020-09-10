@@ -7,7 +7,7 @@ import dots from '../../public/assets/dots.svg'
 const Intro = () => {
     return (
         <section id='intro' style={{ height: '90vh' }} >
-            <div className='flex flex-wrap md:flex-col justify-between items-center md:items-center md:h-auto'  style={{ height: '90vh' }}>
+            <div className='flex flex-wrap md:flex-col justify-between items-center md:items-center md:h-auto' style={{ height: '90vh' }}>
                 <div className='relative md:mt-40 sm:mt-32 sm:my-12'>
                     <img src={logo} alt='Sushant Chitrakar' className='rounded-md z-10 shadow-xl md:w-1/2 lg:w-3/4 mx-auto hover:shadow transition ease-in-out duration-300' />
                     <img src={dots} alt='Sushant Chitrakar' className='absolute w-40 -mt-24 right-0 -mr-20 opacity-50 md:hidden lg:w-1/3 lg:-mr-2 lg:-mt-24' style={{ zIndex: '-1' }} />
@@ -27,10 +27,10 @@ const Intro = () => {
                         </div>
                     </div>
                     <div>
-                        <button className="bg-white font border py-4 px-6 rounded-sm shadow-sm my-12 md:my-2 focus:outline-none hover:text-gray-700 font- inline-flex items-center hover:shadow-lg hover:-translate-y-1 border-darkGrey border-opacity-25 hover:border-opacity-0 transition duration-300 ease-in-out transform tracking-wide">
+                        <a type='button' href='mailto:sushantchitrakar@gmail.com' className="bg-white font border py-4 px-6 rounded-sm shadow-sm my-12 md:my-2 focus:outline-none hover:text-gray-700 font- inline-flex items-center hover:shadow-lg hover:-translate-y-1 border-darkGrey border-opacity-25 hover:border-opacity-0 transition duration-300 ease-in-out transform tracking-wide">
                             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="paper-airplane w-6 h-6 transform rotate-45 mr-2"><path strokeinecap="round" strokeLinejoin="round" strokeWidth="1" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
                     Get In Touch
-                    </button>
+                    </a>
                     </div>
                 </div>
             </div>
