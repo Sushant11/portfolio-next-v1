@@ -16,7 +16,7 @@ const Contact = () => {
             <div className='font-bold text-4xl'>GET IN TOUCH</div>
             <div className='text-lg text-center mt-4 opacity-75'>My inbox is always open. Whether you have a question or just want to say hi, <br /> I’ll try my best to get back to you!</div>
             <div>
-                <a type='button' href='mailto:sushantchitrakar@gmail.com' className="bg-white font border py-4 px-6 rounded-sm shadow-sm my-32 md:my-2 focus:outline-none hover:text-gray-700 font- inline-flex items-center hover:shadow-lg hover:-translate-y-1 border-darkGrey border-opacity-25 hover:border-opacity-0 transition duration-300 ease-in-out transform tracking-wide">
+                <a type='button' href='mailto:sushantchitrakar@gmail.com' className="bg-white font border py-4 px-6 rounded-sm shadow-sm my-24 md:my-2 focus:outline-none hover:text-gray-700 font- inline-flex items-center hover:shadow-lg hover:-translate-y-1 border-darkGrey border-opacity-25 hover:border-opacity-0 transition duration-300 ease-in-out transform tracking-wide">
                     <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="paper-airplane w-6 h-6 transform rotate-45 mr-2"><path strokeinecap="round" strokeLinejoin="round" strokeWidth="1" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
                     Say Hello
                     </a>

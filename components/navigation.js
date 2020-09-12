@@ -18,7 +18,7 @@ const nav = () => {
             {isOpen &&
                 <Sidenav isOpen={isOpen} setOpen={setOpen} />
             }
-            <div className='flex justify-between items-center pt-8 md:mx-4'>
+            <div className='flex justify-between items-center pt-8 md:mx-4' id='nav'>
                 <div >
                     <img src={logo} alt='Sushant Chitrakar' className='sm:ml-4 sm:hidden' />
                     <img src={logoSC} alt='Sushant Chitrakar' className='sm:ml-4 w-8 hidden sm:block' />

@@ -4,6 +4,7 @@ import Intro from './sub-components/Intro';
 import Works from './sub-components/Works';
 import Experience from './sub-components/Experience';
 import Contact from './sub-components/Contact';
+import GoTop from './sub-components/BackToTop';
 
 const main = () => {
     return (
@@ -12,6 +13,7 @@ const main = () => {
             <Works />
             <Experience />
             <Contact />
+            <GoTop/>
         </Fragment>
     );
 };
