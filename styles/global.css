@@ -2,40 +2,69 @@
 
 @tailwind components;
 
-body{
-    background-color: #f0f0f0;
+body {
+  background-color: #f0f0f0 !important;
 }
 
-.nav-icons{
-    @apply w-6 ;
-    @apply h-6 ;
-    @apply inline ;
-    @apply transition ;
-    @apply duration-300 ;
-    @apply ease-in-out ;
-    @apply transform ;
+.nav-icons {
+  @apply w-6;
+  @apply h-6;
+  @apply inline;
+  @apply transition;
+  @apply duration-300;
+  @apply ease-in-out;
+  @apply transform;
+  @apply text-black;
 }
 
-.nav-icons:hover{
-    @apply scale-95;
+.nav-icons:hover {
+  @apply scale-95;
+  @apply opacity-75;
 }
 
-.tap-highlight{
-    -webkit-tap-highlight-color: transparent;
+.tap-highlight {
+  -webkit-tap-highlight-color: transparent;
 }
 
-.footer-icons{
-    @apply w-4 ;
-    @apply h-4 ;
-    @apply inline ;
-    @apply transition ;
-    @apply duration-300 ;
-    @apply ease-in-out ;
-    @apply transform ;
+.footer-icons {
+  @apply w-4;
+  @apply h-4;
+  @apply inline;
+  @apply transition;
+  @apply duration-300;
+  @apply ease-in-out;
+  @apply transform;
+}
+a {
+  color: black !important;
 }
 
-.back-to-top:focus{
-    outline: none;
+a:hover,
+a:active {
+  color: hsla(0, 0%, 0%, 0.6) !important;
+}
+
+.ant-tabs-tab:hover,
+.ant-tabs-tab-btn:focus {
+  color: rgb(0 0 0 / 60%) !important;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #000000 !important;
+  font-weight: 500;
+}
+
+.job {
+  height: 20rem !important;
+}
+.ant-tabs-ink-bar {
+  position: absolute;
+  background: #000000 !important;
+  pointer-events: none;
+}
+
+.back-to-top:focus {
+  outline: none;
 }
 
 /* width */

@@ -10,6 +10,7 @@
     "watch-css": "tailwindcss build styles/global.css -o public/styles.css --watch"
   },
   "dependencies": {
+    "antd": "^4.7.2",
     "next": "9.4.4",
     "next-images": "^1.4.0",
     "react": "16.13.1",
