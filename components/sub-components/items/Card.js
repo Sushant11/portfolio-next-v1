@@ -13,7 +13,7 @@ const Card = ({ item }) => {
                     <a type='button' href={github} className='opacity-50 hover:opacity-100' target='_blank'>
                         <img src={githubIcon} alt='Github' className="w-4 h-4 mr-4"></img>
                     </a>
-                    <a type='button' href={external} className='opacity-50 hover:opacity-100' target='_blank'>
+                    <a type='button' href={external} className=' text-black opacity-50 hover:opacity-100 ' target='_blank'>
                         <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="external-link w-4 h-4"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
                     </a>
                 </span>

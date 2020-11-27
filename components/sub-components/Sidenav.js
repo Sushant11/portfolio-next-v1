@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
 
-const Sidenav = ({ isOpen, setOpen }) => {
+const Sidenav = ({ isOpen, setOpen, handleNav }) => {
     return (
-        <div className={`hidden items-center md:block pl-6 font-normal z-20 text-gray-800 absolute h-full bg-white right-0 shadow-xl pt-24 transition duration-500 ease-in w-1/2`}>
+        <div className={`hidden items-center md:block pl-6 font-normal z-20 text-gray-800 fixed h-full bg-white right-0 shadow-xl pt-12 transition duration-500 ease-in w-1/2`}>
+            <a type='button' onClick={handleNav} className='cursor-pointer mb-12'>
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="x-circle sm:mr-4 nav-icons "><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            </a>
             <div className='flex flex-col'>
                 <div className='hover:text-gray-600 my-4'>
                     <Link
