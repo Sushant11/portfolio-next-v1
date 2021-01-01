@@ -3,7 +3,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 const Sidenav = ({ isOpen, setOpen }) => {
     return (
-        <div className={`hidden items-center md:block pl-6 font-normal z-20 text-gray-800 absolute h-full bg-white right-0 shadow-xl pt-24 transition duration-500 ease-in w-1/2`}>
+        <div className={`hidden items-center md:block pl-6 font-normal z-20 text-gray-800 fixed h-full bg-white right-0 shadow-xl pt-24 transition duration-500 ease-in w-1/2`}>
             <div className='flex flex-col'>
                 <div className='hover:text-gray-600 my-4'>
                     <Link
