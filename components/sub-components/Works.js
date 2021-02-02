@@ -14,8 +14,8 @@ const Works = () => {
             </div>
             <div className='flex justify-between flex-wrap w-full md:justify-center'>
                 {
-                    projects.map(item => (
-                        <Card item={item} />
+                    projects.map((item,i) => (
+                        <Card item={item} key={i} />
                     ))
                 }
             </div>

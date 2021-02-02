@@ -28,8 +28,8 @@ const Card = ({ item }) => {
             </div>
 
             <div className='mt-12 flex flex-wrap absolute bottom-0 mb-6 sm:mb-2'>
-                {tech.map(item => (
-                    <Badge item={item} />
+                {tech.map((item,i) => (
+                    <Badge item={item} key={i} />
                 ))}
             </div>
         </div>

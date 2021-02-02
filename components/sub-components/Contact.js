@@ -30,11 +30,12 @@ const Contact = () => {
                     <span className='mx-2 hover:text-gray-600 items-center'>
                         <Tooltip {...tootipProps} title='Facebook'>
                             <a
-                                activeClass="active"
+                                activeclass="active"
                                 to="works"
                                 spy={true}
                                 smooth={true}
                                 duration={700}
+                                target="_blank"
                                 href='https://www.facebook.com/SuS.Chitrakar'
                                 className='text-black cursor-pointer'
                             >

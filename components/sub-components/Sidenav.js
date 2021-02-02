@@ -6,6 +6,11 @@ const Sidenav = ({ isOpen, setOpen }) => {
         <div className={`hidden items-center md:block pl-6 font-normal z-20 text-gray-800 fixed h-full bg-white right-0 shadow-xl pt-24 transition duration-500 ease-in w-1/2`}>
             <div className='flex flex-col'>
                 <div className='hover:text-gray-600 my-4'>
+                    <a onClick={() => setOpen(!isOpen)}>
+                    <svg className="code nav-icons" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </a>
+                </div>
+                <div className='hover:text-gray-600 my-4'>
                     <Link
                         activeClass="active"
                         to="works"
